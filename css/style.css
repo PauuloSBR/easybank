@@ -1,0 +1,39 @@
+
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.myLinks{
+    display: flex;
+}
+.myLinks-childrens{
+    display: flex;
+    gap: 1.5em;
+}
+.hamburguer{
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+     .myLinks{
+        display: none;
+     }
+     .hamburguer{
+        display: block;
+     }
+    .cta{
+        display: none;
+    } 
+    .myLinks.show{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background-color: black;
+        padding: 2.5rem;
+    }
+    .myLinks.show ul {
+        display: flex; 
+        flex-direction: column;
+    }
+
+  }
