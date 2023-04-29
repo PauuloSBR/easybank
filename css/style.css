@@ -2,9 +2,11 @@
 .header{
     display: flex;
     justify-content: space-between;
+   
 }
 .myLinks{
     display: flex;
+    
 }
 .myLinks-childrens{
     display: flex;
@@ -14,14 +16,27 @@
     display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 378px) {
+    .body{
+        background-image: url(/assets/background/image-mockups.png), url(/assets/background/bg-intro-mobile.svg);
+        background-size: 20rem, 25rem;
+        background-position-x: 1rem, 0rem;
+        background-position-y: -3.6rem, -3rem;
+        background-attachment: fixed, fixed;
+        background-repeat: no-repeat;
+        margin: 0;
+        padding: 0;
+        }
     .header{
         padding: 1rem;
-        z-index: 2;
-        
         background-color: white;
-        
-        
+        width: 95%;
+    }
+    .header-active{
+        box-shadow: -50px 50px 200px rgb(31, 30, 30);
+        padding: 1rem;
+        background-color: white;
+        width: 95%;  
     }
     .icon-burguer{
         background-image: url(/assets/icon/icon-hamburger.svg);
@@ -51,30 +66,21 @@
         flex-direction: column;
         position: absolute;
         background-color: white;
-        z-index: 1;
-        padding: 8.5rem 16.5rem;
-        top: 6rem;
+        padding: 1rem 7.5rem;
+        top: 4rem;
         left: 1rem;
-        border-radius: 0.5rem;
-        box-shadow: 0px 10px 100px rgba(0, 0, 0, 1);
-        
-       
-
-
+        border-radius: 0.3rem;
     }
     .myLinks.show ul {
         display: flex; 
         flex-direction: column;
+        list-style-type: none;  
     }
-    body{
-        background-image: url(/assets/background/image-mockups.png), url(/assets/background/bg-intro-mobile.svg);
-        background-size: cover;
-        background-position-x: 0rem 0rem;
-        background-position-y: -9.9rem, 0.1rem;
-        
-        background-repeat: no-repeat;
-        margin: 0;
-        padding: 0;
+    .myLinks.show a{
+        text-decoration: none;
+        color: black;
+        font-size: 1.5rem;
+        font-family: 'Public Sans', sans-serif;
+        font-size: 18px;
     }
-    
-  }
+}
