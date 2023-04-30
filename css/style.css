@@ -16,13 +16,21 @@
     display: none;
 }
 
+
 @media screen and (max-width: 378px) {
+    h2,h3{
+        font-family: "Public Sans";
+    }
+    
+    h3{
+        font-size: 18px;
+        font-weight: 300;
+    }
     .body{
         background-image: url(/assets/background/image-mockups.png), url(/assets/background/bg-intro-mobile.svg);
         background-size: 20rem, 25rem;
         background-position-x: 1rem, 0rem;
         background-position-y: -3.6rem, -3rem;
-        background-attachment: fixed, fixed;
         background-repeat: no-repeat;
         margin: 0;
         padding: 0;
@@ -33,7 +41,7 @@
         width: 95%;
     }
     .header-active{
-        box-shadow: -50px 50px 200px rgb(31, 30, 30);
+        box-shadow: 150px 450px 300px rgb(31, 30, 30);
         padding: 1rem;
         background-color: white;
         width: 95%;  
@@ -80,7 +88,57 @@
         text-decoration: none;
         color: black;
         font-size: 1.5rem;
-        font-family: 'Public Sans', sans-serif;
+        font-family: "Public Sans";
         font-size: 18px;
     }
+    .text-next{
+        display: flex;
+        font-family: "Public Sans";
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        top: 15rem;
+        text-justify: distribute;
+    }
+    .text-next h1{
+        font-weight: 300;
+    }
+    .text-next h2{
+        display: flex;
+        font-size: 18px;
+        margin-top: -10px;
+        font-weight: 300;
+    }
+    .cta-mobile{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        top: 13rem;
+        margin: 0;
+    }
+    .cta-mobile button{
+        padding: 0.8rem 2rem;
+        border-radius: 1.9rem;
+        border: none;
+        font-family: "Public Sans";
+        font-weight: 600;
+        color: white;
+        background-image:linear-gradient(to right,#32CD32 ,#55FDE0);
+        cursor: pointer;
+    }
+    .motivation-icons{
+        display: flex;
+        flex-direction: column;
+        background-color: #F9F9F9;
+        margin-top: 15rem;
+    }
+    .motivation-icons div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+   
+
 }
