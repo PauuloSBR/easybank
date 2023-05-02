@@ -16,10 +16,6 @@
     display: none;
 }
 @media screen and (max-width: 378px) {
-    h2,h3{
-        font-family: "Public Sans";
-    }
-    
     h3{
         font-size: 18px;
         font-weight: 300;
@@ -32,6 +28,7 @@
         background-repeat: no-repeat;
         margin: 0;
         padding: 0;
+        font-family: "Public Sans";
         }
     .header{
         padding: 1rem;
@@ -89,6 +86,9 @@
         font-family: "Public Sans";
         font-size: 18px;
     }
+    .myLinks.show a:hover{
+        border-bottom: #32CD32 solid 3px;
+    }
     .text-next{
         display: flex;
         font-family: "Public Sans";
@@ -115,7 +115,7 @@
         top: 13rem;
         margin: 0;
     }
-    .cta-mobile button{
+    .button-style button{
         padding: 0.8rem 2rem;
         border-radius: 1.9rem;
         border: none;
@@ -124,6 +124,10 @@
         color: white;
         background-image:linear-gradient(to right,#32CD32 ,#55FDE0);
         cursor: pointer;
+    }
+    .button-style button:hover{
+        filter: brightness(130%);
+        background-image:linear-gradient(to right,#2fb19b ,#2fb19b);
     }
     .motivation-icons{
         display: flex;
@@ -161,6 +165,14 @@
         margin-bottom: 15px;
     
     }
+    .box-article a{
+        text-decoration: none;
+        color: black;
+    }
+    .box-article h2:hover{
+        color: #55FDE0;
+
+    }
     .box-article h2,h3,h4{
        display: flex;
        margin: 0.2rem;
@@ -188,7 +200,6 @@
         gap: 1rem;
         padding-top: 2rem;
     }
-
     .footer-links li{
         display: flex;
         text-decoration: none;
@@ -206,14 +217,17 @@
         display: flex;
         gap: 0.5rem;
     }
-    .cta-mobile-footer{
-        padding: 0.8rem 2rem;
-        border-radius: 1.9rem;
-        border: none;
-        font-family: "Public Sans";
-        font-weight: 600;
-        color: white;
-        background-image:linear-gradient(to right,#32CD32 ,#55FDE0);
-        cursor: pointer;
+
+    .img-logo-social-media img:hover{
+        filter: invert(54%) sepia(15%) saturate(1529%) hue-rotate(100deg) brightness(109%) contrast(98%);
     }
+    .footer-links a:hover{
+        color:#32CD32;
+    }
+    .copyrigth h3{
+        color: #F3F5F9;
+        font-size: 10px;
+        margin-bottom: 2rem;
+    }
+    
 }
