@@ -1,20 +1,73 @@
 
+html, body{
+    margin: 0;
+    padding: 0;
+}
 .header{
     display: flex;
     justify-content: space-between;
-   
+    margin: 0;
+    padding: 2rem;
+    width: 100%;
 }
 .myLinks{
     display: flex;
-    
 }
 .myLinks-childrens{
     display: flex;
     gap: 1.5em;
+    padding-right: 27rem;
+
 }
 .hamburguer{
     display: none;
 }
+.myLinks a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    font-family: "Public Sans";
+    font-size: 18px;
+}
+.myLinks ul{
+    list-style-type: none;  
+}
+.button-style button{
+    padding: 0.8rem 2rem;
+    border-radius: 1.9rem;
+    border: none;
+    font-family: "Public Sans";
+    font-weight: 600;
+    color: white;
+    background-image:linear-gradient(to right,#32CD32 ,#55FDE0);
+    cursor: pointer; 
+}
+.cta{
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+.logo{
+    display: flex;
+    align-self: center;
+
+}
+
+.body{
+    background-image: url(/assets/background/image-mockups.png), url(/assets/background/bg-intro-mobile.svg);
+    background-size: 25rem, 25rem;
+    background-repeat: no-repeat;
+    background-position: right top;
+    font-family: "Public Sans";
+    margin: 0px;
+    padding: 0px;
+    }
+.header{
+    padding: 0.5rem;
+    background-color: white;
+    width: 95%;
+}
+
 @media screen and (max-width: 378px) {
     h3{
         font-size: 18px;
